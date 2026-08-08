@@ -103,7 +103,7 @@ export default function UsersPage() {
     <div className="p-8">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Użytkownicy</h1>
+          <h1 className="text-2xl font-bold text-black">Użytkownicy</h1>
           <p className="text-gray-500 text-sm mt-1">Zarządzaj kontami i uprawnieniami</p>
         </div>
         <button
@@ -126,13 +126,13 @@ export default function UsersPage() {
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Imię i nazwisko *</label>
                 <input type="text" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-gray-900"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-black"
                   placeholder="Jan Kowalski" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Adres email *</label>
                 <input type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-gray-900"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-black"
                   placeholder="jan@bank.pl" />
               </div>
               <div>
@@ -141,7 +141,7 @@ export default function UsersPage() {
                 </label>
                 <input type="password" value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })}
                   required={!editing}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-gray-900"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-black"
                   placeholder="••••••••" />
               </div>
               <div>
@@ -198,7 +198,7 @@ export default function UsersPage() {
             <tbody className="divide-y divide-gray-100">
               {users.map((u) => (
                 <tr key={u.id} className="hover:bg-gray-50">
-                  <td className="px-6 py-4 font-medium text-gray-900">{u.name ?? "—"}</td>
+                  <td className="px-6 py-4 font-medium text-black">{u.name ?? "—"}</td>
                   <td className="px-6 py-4 text-sm text-gray-600">{u.email}</td>
                   <td className="px-6 py-4">
                     <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${

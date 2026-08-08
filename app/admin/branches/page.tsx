@@ -79,7 +79,7 @@ export default function BranchesPage() {
     <div className="p-8">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Placówki bankowe</h1>
+          <h1 className="text-2xl font-bold text-black">Placówki bankowe</h1>
           <p className="text-gray-500 text-sm mt-1">Zarządzaj oddziałami i filiami banku</p>
         </div>
         <button
@@ -106,7 +106,7 @@ export default function BranchesPage() {
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-gray-900"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-black"
                   placeholder="np. Oddział Centrum Warszawa"
                 />
               </div>
@@ -158,7 +158,7 @@ export default function BranchesPage() {
             <tbody className="divide-y divide-gray-100">
               {branches.map((b) => (
                 <tr key={b.id} className="hover:bg-gray-50">
-                  <td className="px-6 py-4 font-medium text-gray-900">{b.name}</td>
+                  <td className="px-6 py-4 font-medium text-black">{b.name}</td>
                   <td className="px-6 py-4">
                     <span className="font-mono text-sm bg-gray-100 px-2 py-0.5 rounded">{b.code}</span>
                   </td>

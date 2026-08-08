@@ -106,7 +106,7 @@ export default function PlansPage() {
     <div className="p-8">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Plany kwartalne</h1>
+          <h1 className="text-2xl font-bold text-black">Plany kwartalne</h1>
           <p className="text-gray-500 text-sm mt-1">Ustaw cele sprzedażowe dla każdej placówki</p>
         </div>
         <button
@@ -169,7 +169,7 @@ export default function PlansPage() {
                 <label className="block text-sm font-medium text-gray-700 mb-1">Cel (liczba sztuk) *</label>
                 <input type="number" value={form.targetCount} onChange={(e) => setForm({ ...form, targetCount: e.target.value })}
                   required min="0"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-gray-900" />
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-black" />
               </div>
               <div className="flex gap-3 pt-2">
                 <button type="button" onClick={() => setShowForm(false)} className="flex-1 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 text-sm">
@@ -197,7 +197,7 @@ export default function PlansPage() {
             <div key={branch.id} className="bg-white rounded-xl shadow-sm overflow-hidden">
               <div className="bg-gray-50 px-6 py-4 border-b border-gray-200 flex items-center gap-3">
                 <span className="font-mono text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">{branch.code}</span>
-                <h3 className="font-semibold text-gray-900">{branch.name}</h3>
+                <h3 className="font-semibold text-black">{branch.name}</h3>
                 <span className="text-sm text-gray-500 ml-auto">
                   Łącznie: {branchPlans.reduce((s, p) => s + p.targetCount, 0)} sztuk
                 </span>
@@ -215,10 +215,10 @@ export default function PlansPage() {
                 <tbody className="divide-y divide-gray-50">
                   {branchPlans.map(({ product, targetCount, plan }) => (
                     <tr key={product.id} className="hover:bg-gray-50">
-                      <td className="px-6 py-3 text-sm font-medium text-gray-900">{product.name}</td>
+                      <td className="px-6 py-3 text-sm font-medium text-black">{product.name}</td>
                       <td className="px-6 py-3 text-center text-sm text-gray-500">{product.points}</td>
                       <td className="px-6 py-3 text-center">
-                        <span className={`text-sm font-medium ${targetCount > 0 ? "text-gray-900" : "text-gray-400"}`}>
+                        <span className={`text-sm font-medium ${targetCount > 0 ? "text-black" : "text-gray-400"}`}>
                           {targetCount}
                         </span>
                       </td>

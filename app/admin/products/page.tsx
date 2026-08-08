@@ -79,7 +79,7 @@ export default function ProductsPage() {
     <div className="p-8">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Produkty bankowe</h1>
+          <h1 className="text-2xl font-bold text-black">Produkty bankowe</h1>
           <p className="text-gray-500 text-sm mt-1">Zarządzaj produktami i przypisanymi punktami</p>
         </div>
         <button
@@ -106,7 +106,7 @@ export default function ProductsPage() {
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-gray-900"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-black"
                   placeholder="np. Konto osobiste"
                 />
               </div>
@@ -116,7 +116,7 @@ export default function ProductsPage() {
                   value={form.description}
                   onChange={(e) => setForm({ ...form, description: e.target.value })}
                   rows={2}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none resize-none text-gray-900"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none resize-none text-black"
                   placeholder="Krótki opis produktu..."
                 />
               </div>
@@ -128,7 +128,7 @@ export default function ProductsPage() {
                   onChange={(e) => setForm({ ...form, points: e.target.value })}
                   required
                   min="0"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-gray-900"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-black"
                 />
               </div>
               <div className="flex gap-3 pt-2">
@@ -166,7 +166,7 @@ export default function ProductsPage() {
             <tbody className="divide-y divide-gray-100">
               {products.map((p) => (
                 <tr key={p.id} className="hover:bg-gray-50">
-                  <td className="px-6 py-4 font-medium text-gray-900">{p.name}</td>
+                  <td className="px-6 py-4 font-medium text-black">{p.name}</td>
                   <td className="px-6 py-4 text-sm text-gray-500">{p.description ?? "—"}</td>
                   <td className="px-6 py-4 text-center">
                     <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
