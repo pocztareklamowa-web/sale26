@@ -147,7 +147,7 @@ export default function UsersPage() {
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Rola *</label>
                 <select value={form.role} onChange={(e) => setForm({ ...form, role: e.target.value })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none bg-white">
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none bg-white text-black">
                   <option value="SALESPERSON">Sprzedawca</option>
                   <option value="DIRECTOR">Dyrektor</option>
                   <option value="ADMIN">Administrator</option>
@@ -156,7 +156,7 @@ export default function UsersPage() {
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Placówka</label>
                 <select value={form.branchId} onChange={(e) => setForm({ ...form, branchId: e.target.value })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none bg-white">
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none bg-white text-black">
                   <option value="">— Brak przypisanej placówki —</option>
                   {activeBranches.map((b) => (
                     <option key={b.id} value={b.id}>{b.name} ({b.code})</option>

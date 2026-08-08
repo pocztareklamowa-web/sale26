@@ -124,7 +124,7 @@ export default function PlansPage() {
         <div className="flex items-center gap-2">
           <label className="text-sm font-medium text-gray-700">Rok:</label>
           <select value={year} onChange={(e) => setYear(Number(e.target.value))}
-            className="px-3 py-1.5 border border-gray-300 rounded-lg text-sm bg-white">
+            className="px-3 py-1.5 border border-gray-300 rounded-lg text-sm bg-white text-black">
             {[currentYear - 1, currentYear, currentYear + 1].map((y) => (
               <option key={y} value={y}>{y}</option>
             ))}
@@ -133,7 +133,7 @@ export default function PlansPage() {
         <div className="flex items-center gap-2">
           <label className="text-sm font-medium text-gray-700">Kwartał:</label>
           <select value={quarter} onChange={(e) => setQuarter(Number(e.target.value))}
-            className="px-3 py-1.5 border border-gray-300 rounded-lg text-sm bg-white">
+            className="px-3 py-1.5 border border-gray-300 rounded-lg text-sm bg-white text-black">
             <option value={1}>Q1 (sty-mar)</option>
             <option value={2}>Q2 (kwi-cze)</option>
             <option value={3}>Q3 (lip-wrz)</option>
@@ -152,7 +152,7 @@ export default function PlansPage() {
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Placówka *</label>
                 <select value={form.branchId} onChange={(e) => setForm({ ...form, branchId: e.target.value })} required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none bg-white">
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none bg-white text-black">
                   <option value="">— Wybierz placówkę —</option>
                   {activeBranches.map((b) => <option key={b.id} value={b.id}>{b.name} ({b.code})</option>)}
                 </select>
@@ -160,7 +160,7 @@ export default function PlansPage() {
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Produkt *</label>
                 <select value={form.productId} onChange={(e) => setForm({ ...form, productId: e.target.value })} required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none bg-white">
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none bg-white text-black">
                   <option value="">— Wybierz produkt —</option>
                   {activeProducts.map((p) => <option key={p.id} value={p.id}>{p.name} ({p.points} pkt)</option>)}
                 </select>
