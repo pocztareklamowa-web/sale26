@@ -169,7 +169,7 @@ export default function PlansPage() {
                 <label className="block text-sm font-medium text-gray-700 mb-1">Cel (liczba sztuk) *</label>
                 <input type="number" value={form.targetCount} onChange={(e) => setForm({ ...form, targetCount: e.target.value })}
                   required min="0"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" />
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-gray-900" />
               </div>
               <div className="flex gap-3 pt-2">
                 <button type="button" onClick={() => setShowForm(false)} className="flex-1 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 text-sm">
